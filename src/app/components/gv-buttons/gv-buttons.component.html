@@ -1,0 +1,31 @@
+
+<div class="row">
+<div class="col-md-10">
+  <mat-card>
+    <mat-card-title>Gratta e Vinci</mat-card-title>
+    <mat-grid-list cols="3" rowHeight="1:1">
+        <mat-grid-tile id="one" (click)="onClick(1)" >1 &euro;</mat-grid-tile>
+        <mat-grid-tile id="two" (click)="onClick(2)">2 &euro;</mat-grid-tile>
+        <mat-grid-tile id="three" (click)="onClick(3)">3 &euro;</mat-grid-tile>
+        <mat-grid-tile id="five" (click)="onClick(5)">5 &euro;</mat-grid-tile>
+        <mat-grid-tile id="ten" (click)="onClick(10)">10 &euro;</mat-grid-tile>
+        <mat-grid-tile id="twenty" (click)="onClick(20)">20 &euro;</mat-grid-tile>
+      </mat-grid-list>
+  </mat-card>
+</div>
+<div class="col-md-2">
+  <mat-card>
+      <mat-card-subtitle>Venduti</mat-card-subtitle>
+      <mat-card-content>
+          <mat-list role="list">
+              <mat-list-item role="listitem"><mat-icon>home</mat-icon> 1 &euro;</mat-list-item>
+              <mat-list-item role="listitem">1 &euro;</mat-list-item>
+              <mat-list-item role="listitem">1 &euro;</mat-list-item>
+              <mat-list-item role="listitem">1 &euro;</mat-list-item>
+
+            </mat-list>
+
+      </mat-card-content>
+  </mat-card>
+</div>
+</div>
