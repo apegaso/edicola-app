@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {MatButton, MatCard, MatGridList, MatGridTile, MatList, MatListItem} from '@angular/material';
-import {MatGridListModule} from '@angular/material/grid-list';
+import {MatSnackBar} from '@angular/material';
+
 @Component({
   selector: 'app-gv-buttons',
   templateUrl: './gv-buttons.component.html',
@@ -8,12 +9,29 @@ import {MatGridListModule} from '@angular/material/grid-list';
 })
 export class GvButtonsComponent implements OnInit {
 
-  constructor() { }
+  items: number[] ;
+  constructor(public snackBar: MatSnackBar) { }
 
   ngOnInit() {
+    this.items = [1, 2, 1, 3, 5, 10];
   }
 
   onClick(gvamount: number) {
     console.log('Click: ' + gvamount);
+    this.openSnackBar('Aggiunto ' + gvamount + ' €', 'Annulla');
   }
+
+  openSnackBar(message: string, action: string) {
+    const snackBarRef = this.snackBar.open(message, action, {
+      duration: 3000,
+      verticalPosition: 'top'
+    });
+    snackBarRef.afterDismissed().subscribe(() => {
+      console.log('The snack-bar was dismissed');
+    });
+    snackBarRef.onAction().subscribe(() => {
+      console.log('The snack-bar action was triggered!');
+    });
+  }
+
 }

@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { GvButtonsComponent } from './components/gv-buttons/gv-buttons.component';
-import {MatButtonModule, MatCardModule, MatGridListModule, MatListModule, MatIconModule} from '@angular/material';
+import {MatButtonModule, MatCardModule, MatGridListModule, MatListModule, MatIconModule, MatSnackBarModule} from '@angular/material';
 
 import 'hammerjs';
 import { MatIcon } from '@angular/material';
@@ -24,7 +24,7 @@ import { MatIcon } from '@angular/material';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MatButtonModule, MatCardModule, MatGridListModule, MatListModule, MatIconModule
+    MatButtonModule, MatCardModule, MatGridListModule, MatListModule, MatIconModule, MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

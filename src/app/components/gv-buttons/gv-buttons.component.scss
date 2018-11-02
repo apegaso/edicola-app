@@ -3,7 +3,8 @@
 
 
 mat-grid-tile{
-  font-size: 8em;
+  font-size: xx-large;
+  font-weight: bolder;
 }
 #one{
   background: #EF9A9A;
@@ -18,15 +19,15 @@ mat-grid-tile{
 }
 
 #five{
-  background-color: #80CBC4;
-}
-
-#ten{
   background-color: #A5D6A7;
 }
 
+#ten{
+  background-color: #FFF59D;
+}
+
 #twenty{
-  background-color: #C5E1A5;
+  background-color: #FFCC80;
 }
 
 
@@ -43,13 +44,25 @@ mat-grid-tile{
 }
 
 #five:hover{
-  background-color: #26A69A;
-}
-
-#ten:hover{
   background-color: #66BB6A;
 }
 
+#ten:hover{
+  background-color: #FFEE58;
+
+}
+
 #twenty:hover{
-  background-color: #9CCC65;
+  background-color: #FFA726;
+}
+
+.delete{
+  color: #EF5350;
+}
+
+mat-list-item{
+  cursor: pointer;
+}
+mat-list-item:hover{
+  background-color: lightgray
 }
