@@ -18,13 +18,13 @@ export class GvButtonsComponent implements OnInit {
 
   onClick(gvamount: number) {
     console.log('Click: ' + gvamount);
-    this.openSnackBar('Aggiunto ' + gvamount + ' €', 'Annulla');
+    this.openSnackBar('Aggiunto ' + gvamount + ' €', 'Chiudi');
   }
 
   openSnackBar(message: string, action: string) {
     const snackBarRef = this.snackBar.open(message, action, {
       duration: 3000,
-      verticalPosition: 'top'
+      verticalPosition: 'bottom'
     });
     snackBarRef.afterDismissed().subscribe(() => {
       console.log('The snack-bar was dismissed');

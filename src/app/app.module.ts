@@ -11,6 +11,7 @@ import {MatButtonModule, MatCardModule, MatGridListModule, MatListModule, MatIco
 
 import 'hammerjs';
 import { MatIcon } from '@angular/material';
+import { GvVendutiComponent } from './components/gv-venduti/gv-venduti.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { MatIcon } from '@angular/material';
     AppComponent,
     NavigationComponent,
     DashboardComponent,
-    GvButtonsComponent
+    GvButtonsComponent,
+    GvVendutiComponent
   ],
   imports: [
     BrowserModule,
